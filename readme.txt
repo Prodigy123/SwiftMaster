@@ -1,1 +1,1 @@
-Before you use this repository, you have to read me at first
+To enhance and polish your skills in swift, the most important thing that you have to do is practice, practice, and practice. These items that I wrote are inspired by allenwong’s 30daysofswift.
