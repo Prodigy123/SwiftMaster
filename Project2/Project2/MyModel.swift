@@ -10,11 +10,11 @@ import Foundation
 
 struct FontInfo{
     static var classOfFont = -1
-    static let data = ["30 Items Swift", "这些字体特别适合打「奋斗」和「理想」", "谢谢「造字工房」，本案例不涉及商业使用", "使用到造字工房劲黑体，致黑体，童心体", "呵呵，再见🤗 See you next Project", "微博 @Prodigy",
-                "测试测试测试测试测试测试",
-                "123",
-                "Alex",
-                "@@@@@@"]
+    static let data = ["your presence is a gift to the world.", "you're unique and one of a kind.", "your life can be what you want it to be", "take it one day at a time", "focus on your blessings,", "not your troubles",
+                "and you'll make it",
+                "through what comes along.",
+                "have belief in your ability.",
+                "have belief in your ability."]
     static let fontNames = ["MFTongXin_Noncommercial-Regular", "MFJinHei_Noncommercial-Regular", "MFZhiHei_Noncommercial-Regular", "Gaspar Regular"]
     static func nextFont()->String{
         classOfFont = (classOfFont+1)%4

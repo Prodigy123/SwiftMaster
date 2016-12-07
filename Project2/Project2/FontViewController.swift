@@ -16,8 +16,8 @@ class FontViewController: UIViewController, UITableViewDelegate, UITableViewData
         showFontTableView.estimatedRowHeight = showFontTableView.rowHeight
         showFontTableView.rowHeight = UITableViewAutomaticDimension
         font = FontInfo.nextFont()
-        showTheFont.text = "Font"
-        showTheFont.font = UIFont(name: font!, size: 16)
+        showTheFont.text = "Never Forget"
+        showTheFont.font = UIFont(name: font!, size: 20)
         button.layer.cornerRadius = 60
         button.titleLabel?.font = UIFont(name: font!, size: 16)
         // Do any additional setup after loading the view.
@@ -31,7 +31,7 @@ class FontViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func touchToChange(_ sender: UIButton) {
         font = FontInfo.nextFont()
-        showTheFont.text = "Font"
+        showTheFont.text = "Never Forget"
         showTheFont.font = UIFont(name: font!, size: 16)
         button.titleLabel?.font = UIFont(name: font!, size: 16)
     }
