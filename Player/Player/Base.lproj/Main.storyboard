@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8PT-Jm-ZLj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NBA VIDEO-->
+        <scene sceneID="blX-3E-H0e">
+            <objects>
+                <tableViewController id="VQW-1K-zO0" customClass="PlayerTableViewController" customModule="Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="181" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Ni-qF-fGi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.085243798790000005" green="0.079931341109999998" blue="0.13440983000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OnlinePlay" rowHeight="181" id="fzs-EB-1LU" customClass="PlayerTableViewCell" customModule="Player" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="181"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fzs-EB-1LU" id="IYp-a0-9nH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-7h-0ue">
+                                            <rect key="frame" x="8" y="8" width="359" height="164.5"/>
+                                            <color key="backgroundColor" red="0.085243798790000005" green="0.079931341109999998" blue="0.13440983000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y33-ya-CSM">
+                                            <rect key="frame" x="157" y="39" width="60" height="60"/>
+                                            <state key="normal" title="Button" image="playBtn"/>
+                                            <connections>
+                                                <action selector="pushButtonToPlay:" destination="VQW-1K-zO0" eventType="touchUpInside" id="qAZ-Uf-uFW"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8E-gd-ys3">
+                                            <rect key="frame" x="8" y="117" width="359" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.085243798790000005" green="0.079931341109999998" blue="0.13440983000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="g8E-gd-ys3" firstAttribute="top" secondItem="IYp-a0-9nH" secondAttribute="topMargin" constant="109" id="8eq-fk-d6Q"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="g8E-gd-ys3" secondAttribute="bottom" constant="34" id="Hj5-aj-g2G"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Y33-ya-CSM" secondAttribute="trailing" constant="150" id="M8m-z6-Zcm"/>
+                                        <constraint firstItem="aYL-7h-0ue" firstAttribute="top" secondItem="IYp-a0-9nH" secondAttribute="top" constant="8" id="OH4-WA-Gwl"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Y33-ya-CSM" secondAttribute="bottom" constant="73" id="Ww2-GO-GBA"/>
+                                        <constraint firstAttribute="trailing" secondItem="aYL-7h-0ue" secondAttribute="trailing" constant="8" id="XPH-yU-p8z"/>
+                                        <constraint firstItem="Y33-ya-CSM" firstAttribute="leading" secondItem="IYp-a0-9nH" secondAttribute="leadingMargin" constant="149" id="Zid-5f-hZZ"/>
+                                        <constraint firstItem="aYL-7h-0ue" firstAttribute="leading" secondItem="IYp-a0-9nH" secondAttribute="leading" constant="8" id="e7r-v0-Pwn"/>
+                                        <constraint firstItem="g8E-gd-ys3" firstAttribute="leading" secondItem="IYp-a0-9nH" secondAttribute="leadingMargin" id="ffa-wc-rvH"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="g8E-gd-ys3" secondAttribute="trailing" id="iGM-za-APe"/>
+                                        <constraint firstItem="Y33-ya-CSM" firstAttribute="top" secondItem="IYp-a0-9nH" secondAttribute="topMargin" constant="31" id="iWo-Qg-JRW"/>
+                                        <constraint firstAttribute="bottom" secondItem="aYL-7h-0ue" secondAttribute="bottom" constant="7.5" id="tXI-Cj-vKo"/>
+                                        <constraint firstItem="aYL-7h-0ue" firstAttribute="top" secondItem="IYp-a0-9nH" secondAttribute="top" constant="8" id="yzf-bG-MhK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.085243798790000005" green="0.079931341109999998" blue="0.13440983000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="imageName" destination="aYL-7h-0ue" id="q50-Q1-J7B"/>
+                                    <outlet property="playButton" destination="Y33-ya-CSM" id="h57-bI-wXy"/>
+                                    <outlet property="videoName" destination="g8E-gd-ys3" id="9qy-Vy-Ppu"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VQW-1K-zO0" id="Q0w-DG-tYt"/>
+                            <outlet property="delegate" destination="VQW-1K-zO0" id="tSf-Wr-oh8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="NBA VIDEO" id="BKJ-it-RvF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tiy-7z-fMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2503" y="5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mJX-aV-TTh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8PT-Jm-ZLj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="srs-bR-N9A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VQW-1K-zO0" kind="relationship" relationship="rootViewController" id="Wd7-cX-ivL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xyq-fP-LtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.60000000000002" y="4.9475262368815596"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0" width="375" height="180"/>
+        <image name="playBtn" width="60" height="60"/>
+    </resources>
+</document>
