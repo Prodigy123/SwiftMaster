@@ -31,11 +31,8 @@ class PlayerTableViewController: UITableViewController {
         
     }
     @IBAction func pushButtonToPlay(_ sender: UIButton) {
-        print("i am here")
         if let fatherView = sender.superview{
-            print("I AM HERE TWO")
             if let cell = fatherView.superview as? PlayerTableViewCell{
-                print("I AM HERE THREE")
                 if let index = self.tableView.indexPath(for: cell ){
                     playVideo(index.row)
                 }
