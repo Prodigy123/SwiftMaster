@@ -1,1 +1,1 @@
-To enhance and polish your skills in swift, the most important thing that you have to do is practice, practice, and practice. Love swift, be a geek.
+These violent delights have violent ends.
